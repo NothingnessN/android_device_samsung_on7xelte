@@ -21,10 +21,10 @@ $(call inherit-product, device/samsung/on7xelte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_on7xelte
+PRODUCT_NAME := dot_on7xelte
 PRODUCT_DEVICE := on7xelte
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := Samsung Galaxy J7 Prime
