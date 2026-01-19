@@ -44,12 +44,6 @@ TARGET_CPU_CORTEX_A53 := true
 # Binder
 TARGET_USES_64_BIT_BINDER := true
 
-# VNDK VERSION
-BOARD_VNDK_VERSION := current
-
-# Dedupe VNDK libraries with identical core variants.
-TARGET_VNDK_USE_CORE_VARIANT := true
-
 # Broken Rules
 BUILD_BROKEN_DUP_RULES := true
 
