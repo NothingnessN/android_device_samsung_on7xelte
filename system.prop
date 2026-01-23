@@ -27,6 +27,7 @@ ro.opengles.version=196610
 debug.hwc.skip_dma_types=0,2
 debug.hwc.force_gpu=1
 debug.sf.disable_backpressure=1
+debug.renderengine.backend=gles
 persist.hwc.ptor.enable=true
 ro.surface_flinger.supports_background_blur=false
 persist.sys.sf.disable_blurs=true
@@ -69,3 +70,7 @@ wifi.interface=wlan0
 wlan.wfd.hdcp=disable
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# Bpf
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.kernel.ebpf.supported=false

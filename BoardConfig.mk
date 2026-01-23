@@ -44,6 +44,12 @@ TARGET_CPU_CORTEX_A53 := true
 # Binder
 TARGET_USES_64_BIT_BINDER := true
 
+# VNDK VERSION
+BOARD_VNDK_VERSION := current
+
+# Dedupe VNDK libraries with identical core variants.
+TARGET_VNDK_USE_CORE_VARIANT := true
+
 # Broken Rules
 BUILD_BROKEN_DUP_RULES := true
 
@@ -246,6 +252,9 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
 BOARD_SEPOLICY_DIRS := device/samsung/on7xelte/sepolicy
 BOARD_SEPOLICY_VERS := $(PLATFORM_SDK_VERSION).0
 SELINUX_IGNORE_NEVERALLOWS := true
+
+# memfd backport
+TARGET_HAS_MEMFD_BACKPORT := true
 
 # Shim
 TARGET_LD_SHIM_LIBS += \
